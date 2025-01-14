@@ -1,0 +1,110 @@
+// Container
+.container {
+    max-width: 1344px;
+    width: 100%;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 1200px) {
+        max-width: 1140px;
+    }
+    @media screen and (max-width: 1024px) {
+        max-width: 940px;
+    }
+    @media screen and (max-width: 576px) {
+        max-width: 100%;
+    }
+}
+.container-fluid {
+    max-width: 1414px;
+    width: 95%;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: $mobile) {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+.container-full {
+    width: 100%;
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 var(--container-padding-x);
+    @media screen and (min-width: 1240px) {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    @media screen and (max-width: 992px) {
+        max-width:  990px;
+    }
+    @media screen and (max-width: 576px) {
+        max-width: 100%;
+    }
+}
+.game-section {
+    padding-bottom: 4rem;
+}
+.mobile-hidden {
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+}
+.desktop-hidden {
+    @media screen and (min-width: $desktop-min) {
+        display: none;
+    }
+}
+// Typography
+.text-accent {
+    -webkit-text-fill-color: transparent;
+    background: var(--text-accent-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+h1,
+h2,
+h3,
+h4 {
+    line-height: 120%;
+}
+p {
+    line-height: 140%;
+}
+h1 {
+    font-size: 3rem;
+    @media screen and (max-width: 992px) {
+        font-size: 2.5rem;
+    }
+     @media screen and (max-width: 576px) {
+        font-size: 2rem;
+    }
+}
+h2 {
+    font-size: 2.25rem;
+    @media screen and (max-width: 992px) {
+        font-size: 2rem;
+    }
+     @media screen and (max-width: 576px) {
+        font-size: 1.8rem;
+    }
+}
+h3 {
+    font-size: 1.6rem;
+    @media screen and (max-width: 992px) {
+        font-size: 1.5rem;
+    }
+     @media screen and (max-width: 576px) {
+        font-size: 1.2rem;
+    }
+}
+p {
+    font-size: 1rem;
+    @media screen and (max-width: 992px) {
+        font-size: 1rem;
+    }
+     @media screen and (max-width: 576px) {
+        font-size: 1rem;
+    }
+}

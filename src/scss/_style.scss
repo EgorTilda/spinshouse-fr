@@ -1,0 +1,58 @@
+.intro {
+    &__inner {
+        display: flex;
+        gap: 2rem;
+    }
+    @media screen and (max-width: 940px) {
+        &__inner {
+            flex-direction: column;
+        }
+    }
+}
+.benefits {
+    margin-top: 10rem;
+    &__grid {
+        max-width: 80%;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        @media screen and (max-width: 1130px) {
+            max-width: 95%;
+            width: 90%;
+        }
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        @media screen and (max-width: 650px) {
+            max-width: 100%;
+            width: 100%;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+    }
+    &__btn-wrap {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+    }
+}
+.games {
+    margin: 4rem 0;
+}
+.payments {
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem 0;
+        margin-bottom: 3rem;
+    }
+    @media screen and (max-width: $mobile) {
+        &__item {
+            max-width: 100px;
+        }
+    }
+}

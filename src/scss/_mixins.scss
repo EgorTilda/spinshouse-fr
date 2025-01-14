@@ -1,0 +1,53 @@
+@mixin surface-decor($height, $top, $opacity) {
+    &:before {
+        background: var(--white-color);
+        content: "";
+        display: block;
+        height: $height; // params
+        left: 0;
+        opacity: $opacity; // params
+        position: absolute;
+        top: $top; // params
+        transform: rotate(55deg);
+        width: 50%; // params
+        z-index: 1;
+    }
+}
+
+@mixin surface-decor-gradient($color-value) {
+    &:after {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        background: $color-value;
+        border-radius: 50%;
+        bottom: -5.5rem;
+        content: "";
+        filter: blur(128px);
+        -webkit-filter: blur(128px);
+        height: 22rem;
+        position: absolute;
+        right: -7rem;
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        width: 22rem;
+        z-index: 1;
+        @media screen and (max-width: 1193px) {
+            bottom: auto;
+            right: 50%;
+            top: -4rem;
+            transform: translateX(50%);
+        }
+        @media screen and (max-width: 940px) {
+            bottom: -5.5rem;
+            right: -7rem;
+            top: 0;
+        }
+        @media screen and (max-width: 576px) { 
+            bottom: auto;
+            right: 50%;
+            top: -4rem;
+            transform: translateX(50%);
+        }
+
+    }
+}
