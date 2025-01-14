@@ -1,8 +1,1 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Group">
-<g id="Group_2">
-<path id="Path" d="M4.48001 11.98H19.47" stroke="#EAECF0" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"/>
-<path id="Path_2" d="M13.483 5.98801L19.52 12L13.483 18.012" stroke="#EAECF0" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-</g>
-</svg>
+<svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.48 11.98h14.99m-5.987-5.992L19.52 12l-6.037 6.012" stroke="#EAECF0" stroke-width="1.92" stroke-linecap="round" stroke-linejoin="round"/></svg>
